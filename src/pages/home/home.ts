@@ -20,6 +20,7 @@ export class HomePage {
       { 'name': 'Hello3 World', quantityInCart: 0 , id: 4}
     ];
   }
+  
 
   addToCart(item) {
     item.quantityInCart += 1;
