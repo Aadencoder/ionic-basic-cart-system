@@ -3,9 +3,10 @@
     <ion-title>
       Cart Example
     </ion-title>
+    
     <ion-buttons right>
-      <button ion-button icon-only (click)="goToList()">
         <ion-badge *ngIf="itemsInCart.length">{{itemsInCart.length}}</ion-badge>
+      <button ion-button icon-only (click)="goToList()">
         <ion-icon  name="cart" ></ion-icon>
         <!-- <ion-badge *ngIf="itemsInCart.length" [@cartBadge]="cartBadgeState">{{itemsInCart.length}}</ion-badge>
         <ion-icon [@cartBadge]="cartBadgeState" name="cart"></ion-icon> -->
@@ -38,7 +39,7 @@
         ion-button small>
       <!-- <button *ngIf="item.quantityInCart" [@addButton]="item.addButtonState" (@addButton.done)="addToCartFinished(item)" color="light"
         ion-button small> -->
-        {{item.quantityInCart}}
+        <!-- {{item.quantityInCart}} -->
       </button>
       <button (click)="addToCart(item)" ion-button icon-left small>
         <ion-icon name="add"></ion-icon>
